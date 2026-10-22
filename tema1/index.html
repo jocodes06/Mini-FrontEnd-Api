@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini FrontEnd API</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h3>Home</h3>
+        </nav>
+    </header>
+    <main>
+        <h1>Completati formularul:</h1>
+        <form id="formular">
+            <label for="titlu">Titlu</label>
+            <input type="text" id="titlu" name="title" placeholder="Titlu:" required minlength="5">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email:" required>
+            <label for="continut">Continut</label>
+            <textarea id="continut" name="body"placeholder="Continutul este:" required minlength="50"></textarea>
+            <button type="submit">Adauga</button>
+        </form>
+
+        <p id="mesaj-form"></p>
+
+        <section>
+            <label for="cautare">Cauta o postare</label>
+            <input type="search" id="cautare" name="search" placeholder="Cauta dupa titlu:">
+            <p id="status">Se incarca...</p>
+            <ul id="lista"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>Mini FrontEnd API</p>
+    </footer>
+</body>
+</html>
